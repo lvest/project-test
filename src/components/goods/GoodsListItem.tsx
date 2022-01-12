@@ -42,10 +42,12 @@ const Title = styled.h2`
 `;
 
 function GoodsListItem({ info }: GoodsListItemProps) {
+  console.log(info.img);
+
   return (
-    <StLink to={`/${info.id}`}>
+    <StLink to={`/list/${info.id}`}>
       <GoodsItemWrapper>
-        <GoodsImg></GoodsImg>
+        <GoodsImg src={info.img} />
         <GoodsInfo>
           <Title>{info.title}</Title>
           <h3>{info.price + '원'}</h3>

@@ -3,12 +3,6 @@ import styled from 'styled-components';
 import goodslist from '../data/goodslist';
 import GoodsListItem from '../components/goods/GoodsListItem';
 
-const Header = styled.header`
-  width: 100vw;
-  height: 8vh;
-  background-color: beige;
-`;
-
 const GoodsWrapper = styled.ul`
   padding: 10px 0;
   display: flex;
@@ -19,7 +13,6 @@ const GoodsWrapper = styled.ul`
 function Home() {
   return (
     <main>
-      <Header></Header>
       <GoodsWrapper>
         {goodslist.map((good) => {
           return <GoodsListItem key={good.id} info={good} />;

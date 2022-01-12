@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   main{
-    margin-bottom: 8vh;
+    margin: 8vh 0;
     background-color: aliceblue;
   }
 `;
