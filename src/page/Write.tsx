@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Write() {
-  const Form = styled.form``;
+  const Form = styled.form`
+    width: 100vw;
+  `;
   return (
     <Form>
       <div>

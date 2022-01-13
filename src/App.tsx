@@ -8,7 +8,7 @@ import Write from './page/Write';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GlobalStyle></GlobalStyle>
       <Header></Header>
       <Routes>
